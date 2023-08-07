@@ -34,7 +34,7 @@
 	            <button class="loginBtn">로그인</button>
 	        </div>
 	        <div class="login_footer">
-	            <a href="/register/register.do">회원가입</a>
+	            <a href="/user/register.do">회원가입</a>
 	            <div class="vertical_devider"></div>
 	            <a href="/register/searchId.do">아이디 패스워드 찾기</a>
 	        </div>

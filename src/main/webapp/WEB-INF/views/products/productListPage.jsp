@@ -40,6 +40,11 @@
                                     <h3>복합기/프린터/소프트웨어</h3>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/notice/list.do">
+                                    <h3>공지사항</h3>
+                                </a>
+                            </li>
                         </ul>
                     </details>
                 </div>
@@ -63,7 +68,6 @@
                 </div>
             </div>
         </header>
-<%-- 		<jsp:include page="/WEB-INF/views/include/header.jsp"></jsp:include> --%>
         <hr />
         <main>
             <div class="navBar">

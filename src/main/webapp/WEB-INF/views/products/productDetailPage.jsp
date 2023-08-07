@@ -41,13 +41,18 @@
                                         <h3>복합기/프린터/소프트웨어</h3>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="/notice/list.do">
+                                        <h3>공지사항</h3>
+                                    </a>
+                                </li>
                             </ul>
                         </details>
                     </div>
                     <div class="logoImg">
                         <img src="/resources/images/computet_icon.png" />
                     </div>
-                    <a href="/mainPage.jsp">
+                    <a href="/index.jsp">
                         <div class="title">DANAONDA SHOP</div>
                     </a>
                     <div class="login_register_box">

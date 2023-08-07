@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import common.SqlSessionTemplate;
 import notice.model.dao.NoticeDAO;
 import notice.model.vo.Notice;
+import notice.model.vo.PageDate;
 
 public class NoticeService {
 	private NoticeDAO nDao;
@@ -52,11 +53,13 @@ public class NoticeService {
 	}
 
 	// 공지사항 전체 목록 조회
-	public List<Notice> selectNoticeList(int currentPage) {
+	public PageDate selectNoticeList(int currentPage) {
 		SqlSession session = SqlSessionTemplate.getSqlSession();
 		List<Notice> nList = nDao.selectNoticeList(session, currentPage);
+		String pageNavi = nDao.generatePageNavi(session, currentPage);
+		PageDate pd = new PageDate(nList, pageNavi);
 		session.close();
-		return nList;
+		return pd;
 	}
 
 	public Notice selectOneById(int noticeNo) {
